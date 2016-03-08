@@ -7,9 +7,9 @@ Refer to link http://research.microsoft.com/en-us/um/people/kahe/eccv10/ for det
 ## Installation
 
 *Note*: This program was only tested on **Ubuntu** with **Python2.7**.
-**Windows** and **Mac OS** are not officially supported,
+**Windows** and **Mac OS** are not been tested.
 
 ### Dependencies
 Please install the following required python modules.
-* ** Numpy **
+* **Numpy**
 

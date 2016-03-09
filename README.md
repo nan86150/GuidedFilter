@@ -13,3 +13,17 @@ Refer to link http://research.microsoft.com/en-us/um/people/kahe/eccv10/ for det
 Please install the following required python modules.
 * **Numpy**
 
+### setup.py install
+```
+python setup.py install
+```
+
+## Usage
+``` python
+from guidedfilter import guidedfilter
+```
+
+
+## License
+
+The MIT License 2015 (c) tody

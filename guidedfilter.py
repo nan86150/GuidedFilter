@@ -3,7 +3,7 @@
 
 import numpy as np
 
-def box_filter(img, r):
+def boxfilter(img, r):
     (rows, cols) = img.shape
     imDst = np.zeros_like(img)
 
@@ -20,23 +20,23 @@ def box_filter(img, r):
     return imDst
 
 
-def guided_filter(I, p, r, eps):
+def guidedfilter(I, p, r, eps):
     (rows, cols) = I.shape
-    N = box_filter(np.ones([rows, cols]), r)
+    N = boxfilter(np.ones([rows, cols]), r)
 
-    meanI = box_filter(I, r) / N
-    meanP = box_filter(p, r) / N
-    meanIp = box_filter(I * p, r) / N
+    meanI = boxfilter(I, r) / N
+    meanP = boxfilter(p, r) / N
+    meanIp = boxfilter(I * p, r) / N
     covIp = meanIp - meanI * meanP
 
-    meanII = box_filter(I * I, r) / N
+    meanII = boxfilter(I * I, r) / N
     varI = meanII - meanI * meanI
 
     a = covIp / (varI + eps)
     b = meanP - a * meanI
 
-    meanA = box_filter(a, r) / N
-    meanB = box_filter(b, r) / N
+    meanA = boxfilter(a, r) / N
+    meanB = boxfilter(b, r) / N
 
     q = meanA * I + meanB
     return q

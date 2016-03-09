@@ -26,4 +26,4 @@ from guidedfilter import guidedfilter
 
 ## License
 
-The MIT License 2015 (c) tody
+The MIT License 2016 (c) tody

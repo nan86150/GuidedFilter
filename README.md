@@ -26,4 +26,4 @@ from guidedfilter import guidedfilter
 
 ## License
 
-The MIT License 2016 (c) [pfchai](http://blog.pfchai.com)
+The MIT License (MIT) Copyright (c) 2016 [pfchai](http://blog.pfchai.com)
